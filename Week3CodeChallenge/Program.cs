@@ -28,14 +28,14 @@ namespace Week3CodeChallenge
             Console.ReadKey();
         }
 
-        static long FindPrimes(int maxPrime)
+        static void FindPrimes(int maxPrime)
         {
         //declare list to store prime numbers
             List<int> primeList = new List<int>(){2};
         //loops until it finds as many prime numbers
             int test = 3;
             while (primeList.Count < maxPrime)
-            {
+           {
             //While isPrime is true it will run for Loop
                 bool isPrime = true;
                 for (int i = 2; i < test; i++) 
@@ -90,7 +90,7 @@ namespace Week3CodeChallenge
               total += final;
             }
             }
-                        //Print to consol
+            //Print to console
             Console.WriteLine("Fibonacci Sequence: " + total);
             }
         //Function for LongestCollatzSequence
